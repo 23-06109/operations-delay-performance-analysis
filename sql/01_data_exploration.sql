@@ -1,5 +1,5 @@
 -- Portfolio #2: Operations Delay & Performance Analysis
--- Data Exploration
+-- Data Exploration 
 
 -- Preview sample records
 SELECT *
