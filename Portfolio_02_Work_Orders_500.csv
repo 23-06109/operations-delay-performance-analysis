@@ -1,0 +1,501 @@
+WorkOrderID,Department,Category,Priority,AssignedTeam,CreatedDate,DueDate,CompletedDate,Status,EstimatedHours,ActualHours,Cost
+WO-0001,Construction,Installation,High,CON-A,2026-02-27,2026-03-04,2026-03-12,Completed,44,36.1,1985.13
+WO-0002,Construction,Installation,Medium,CON-C,2026-06-16,2026-06-26,2026-07-05,Completed,10,12.9,699.66
+WO-0003,QA/QC,Test Package,Medium,QA-B,2026-01-27,2026-02-09,2026-02-10,Completed,23,25.3,1220.17
+WO-0004,Planning,Schedule Update,Medium,PLAN-B,2026-05-28,2026-06-15,2026-06-17,Completed,13,18.7,1119.18
+WO-0005,Procurement,Purchase Review,Medium,PROC-B,2026-02-11,2026-02-23,2026-02-28,Completed,5,6.4,287.52
+WO-0006,QA/QC,NCR Review,High,QA-A,2026-02-28,2026-03-10,2026-03-09,Completed,22,30.1,1517.04
+WO-0007,Construction,Work Front Preparation,High,CON-C,2026-04-28,2026-05-04,2026-05-10,Completed,44,60.9,3489.35
+WO-0008,Engineering,Drawing Revision,Medium,ENG-A,2026-07-13,2026-07-21,2026-07-30,Completed,35,41.6,2539.61
+WO-0009,Construction,Work Front Preparation,Medium,CON-C,2026-01-03,2026-01-20,2026-01-31,Completed,31,33.9,2182.17
+WO-0010,Procurement,Delivery Tracking,Critical,PROC-A,2026-05-10,2026-05-17,2026-05-23,Completed,9,8.1,415.14
+WO-0011,Construction,Installation,Medium,CON-B,2026-01-05,2026-01-17,2026-01-23,Completed,46,51.3,2723.17
+WO-0012,Procurement,Vendor Follow-up,Low,PROC-B,2026-05-21,2026-06-05,2026-06-12,Completed,9,12.6,644.81
+WO-0013,Construction,Site Rectification,Medium,CON-C,2026-06-16,2026-06-30,2026-07-07,Completed,24,27.8,1659.9
+WO-0014,Engineering,Design Review,Medium,ENG-A,2026-03-26,2026-04-10,2026-04-13,Completed,21,24.2,1589.13
+WO-0015,Planning,Recovery Planning,Medium,PLAN-B,2026-07-26,2026-08-05,,In Progress,15,9.0,524.9
+WO-0016,Construction,Installation,Low,CON-C,2026-03-28,2026-04-10,2026-04-13,Completed,18,17.3,1106.87
+WO-0017,QA/QC,Inspection,Low,QA-C,2026-08-03,2026-08-13,2026-08-16,Completed,19,17.8,914.7
+WO-0018,Engineering,Material Submittal,Low,ENG-B,2026-03-09,2026-04-02,,In Progress,39,17.6,1214.63
+WO-0019,Construction,Installation,High,CON-A,2026-01-13,2026-01-25,2026-02-01,Completed,42,49.8,3028.62
+WO-0020,Engineering,Design Review,Critical,ENG-C,2026-03-05,2026-03-10,2026-03-15,Completed,28,39.4,2308.29
+WO-0021,Construction,Punch List,Medium,CON-A,2026-06-21,2026-07-05,2026-07-26,Completed,49,41.5,2279.17
+WO-0022,QA/QC,Test Package,High,QA-A,2026-04-05,2026-04-16,2026-04-17,Completed,23,33.1,1854.7
+WO-0023,Construction,Site Rectification,Critical,CON-A,2026-02-04,2026-02-11,2026-02-12,Completed,27,27.6,1682.84
+WO-0024,Procurement,Purchase Review,Medium,PROC-A,2026-01-24,2026-02-04,2026-02-12,Completed,7,8.5,390.71
+WO-0025,Procurement,Purchase Review,Medium,PROC-A,2026-01-20,2026-02-04,2026-02-08,Completed,7,7.3,387.29
+WO-0026,Planning,Schedule Update,High,PLAN-A,2026-06-24,2026-06-29,,Not Started,17,14.2,861.96
+WO-0027,Engineering,Drawing Revision,Critical,ENG-A,2026-04-16,2026-04-21,2026-04-22,Completed,23,22.4,1490.49
+WO-0028,Engineering,Design Review,High,ENG-A,2026-02-21,2026-03-01,2026-02-28,Completed,20,16.9,1121.28
+WO-0029,QA/QC,Quality Documentation,High,QA-C,2026-03-26,2026-04-03,2026-04-07,Completed,12,9.9,530.89
+WO-0030,QA/QC,Test Package,Medium,QA-C,2026-01-30,2026-02-15,2026-02-28,Completed,17,19.5,1073.09
+WO-0031,Procurement,Vendor Follow-up,Medium,PROC-A,2026-06-20,2026-07-06,,In Progress,12,9.2,429.13
+WO-0032,Construction,Punch List,Medium,CON-C,2026-04-08,2026-04-24,2026-05-01,Completed,10,10.0,548.82
+WO-0033,Procurement,Delivery Tracking,Medium,PROC-B,2026-06-22,2026-07-07,2026-07-13,Completed,5,6.0,265.12
+WO-0034,Planning,Progress Verification,High,PLAN-A,2026-07-26,2026-07-30,2026-08-07,Completed,19,22.7,1334.73
+WO-0035,QA/QC,NCR Review,High,QA-B,2026-05-07,2026-05-13,2026-05-15,Completed,7,9.3,509.28
+WO-0036,Construction,Punch List,Critical,CON-A,2026-04-27,2026-05-03,2026-05-02,Completed,58,80.0,4801.4
+WO-0037,Construction,Work Front Preparation,High,CON-C,2026-04-25,2026-05-06,2026-05-15,Completed,25,32.6,1903.3
+WO-0038,Engineering,Material Submittal,Low,ENG-B,2026-03-02,2026-03-20,2026-03-19,Completed,17,16.2,1057.3
+WO-0039,Construction,Installation,Medium,CON-B,2026-05-19,2026-06-01,,Not Started,34,23.7,1447.47
+WO-0040,Procurement,Purchase Review,Medium,PROC-B,2026-03-18,2026-03-31,2026-04-04,Completed,10,11.2,529.83
+WO-0041,Construction,Work Front Preparation,High,CON-B,2026-02-02,2026-02-06,2026-02-10,Completed,18,24.5,1335.71
+WO-0042,QA/QC,Test Package,Medium,QA-B,2026-03-28,2026-04-08,2026-04-15,Completed,19,27.5,1397.1
+WO-0043,Construction,Installation,High,CON-A,2026-02-21,2026-02-27,2026-03-04,Completed,52,45.5,2925.35
+WO-0044,Construction,Site Rectification,High,CON-A,2026-06-05,2026-06-13,2026-06-07,Completed,29,30.3,1945.66
+WO-0045,Engineering,Drawing Revision,Low,ENG-B,2026-06-25,2026-07-08,2026-07-05,Completed,31,26.2,1693.37
+WO-0046,Engineering,Material Submittal,High,ENG-A,2026-04-21,2026-05-02,2026-05-03,Completed,19,18.5,1236.24
+WO-0047,Construction,Work Front Preparation,Medium,CON-C,2026-06-01,2026-06-13,2026-06-07,Completed,38,36.4,2115.92
+WO-0048,Construction,Work Front Preparation,Medium,CON-B,2026-03-25,2026-04-08,2026-04-11,Completed,31,42.5,2519.91
+WO-0049,Construction,Punch List,Low,CON-C,2026-04-15,2026-05-10,2026-05-23,Completed,55,61.5,3832.55
+WO-0050,Engineering,Drawing Revision,Medium,ENG-A,2026-03-20,2026-04-03,2026-04-02,Completed,29,29.0,1709.39
+WO-0051,Construction,Site Rectification,Low,CON-C,2026-07-15,2026-07-30,2026-08-10,Completed,56,66.3,4103.99
+WO-0052,Construction,Installation,High,CON-B,2026-02-28,2026-03-08,2026-03-10,Completed,18,20.9,1276.97
+WO-0053,Engineering,Material Submittal,Low,ENG-A,2026-05-27,2026-06-15,2026-07-01,Completed,11,10.6,716.07
+WO-0054,Engineering,Design Review,Medium,ENG-A,2026-05-28,2026-06-06,,Not Started,13,3.9,258.29
+WO-0055,Construction,Punch List,High,CON-B,2026-04-26,2026-05-06,2026-05-04,Completed,13,18.4,1009.27
+WO-0056,Engineering,Design Review,Medium,ENG-A,2026-05-22,2026-05-31,2026-05-28,Completed,38,37.6,2216.8
+WO-0057,Construction,Work Front Preparation,Low,CON-A,2026-03-09,2026-03-25,2026-04-06,Completed,19,16.1,874.51
+WO-0058,QA/QC,Test Package,Medium,QA-B,2026-06-26,2026-07-14,2026-07-10,Completed,19,20.6,1105.02
+WO-0059,Planning,Lookahead Review,High,PLAN-A,2026-01-24,2026-01-28,2026-01-29,Completed,5,5.7,312.65
+WO-0060,QA/QC,Quality Documentation,High,QA-B,2026-01-24,2026-02-03,2026-02-01,Completed,7,9.5,480.44
+WO-0061,Construction,Site Rectification,High,CON-B,2026-07-28,2026-08-02,2026-08-11,Completed,17,19.3,1250.8
+WO-0062,Construction,Work Front Preparation,Medium,CON-A,2026-05-13,2026-05-29,2026-06-01,Completed,13,12.1,716.42
+WO-0063,Planning,Recovery Planning,High,PLAN-B,2026-02-01,2026-02-08,2026-02-06,Completed,4,5.8,351.17
+WO-0064,Construction,Installation,High,CON-A,2026-05-08,2026-05-16,,In Progress,40,26.7,1524.42
+WO-0065,Planning,Progress Verification,High,PLAN-B,2026-07-17,2026-07-29,,On Hold,13,11.9,672.55
+WO-0066,Construction,Punch List,Medium,CON-B,2026-03-30,2026-04-14,2026-04-17,Completed,30,41.0,2653.3
+WO-0067,Engineering,Material Submittal,Medium,ENG-B,2026-01-12,2026-01-30,2026-01-27,Completed,32,42.7,2953.92
+WO-0068,Construction,Installation,Low,CON-C,2026-03-26,2026-04-08,,On Hold,10,5.5,333.05
+WO-0069,Engineering,Material Submittal,High,ENG-B,2026-03-28,2026-04-02,2026-04-09,Completed,32,45.4,2921.47
+WO-0070,Planning,Recovery Planning,High,PLAN-A,2026-06-08,2026-06-16,,Not Started,17,14.4,835.45
+WO-0071,Engineering,Drawing Revision,High,ENG-A,2026-01-12,2026-01-20,2026-01-23,Completed,17,21.1,1229.2
+WO-0072,Engineering,Material Submittal,High,ENG-A,2026-05-08,2026-05-19,2026-05-27,Completed,24,29.6,2014.61
+WO-0073,Construction,Site Rectification,High,CON-A,2026-01-19,2026-01-27,,In Progress,54,49.6,2715.2
+WO-0074,QA/QC,Quality Documentation,Low,QA-B,2026-05-27,2026-06-17,2026-06-17,Completed,16,19.9,1100.85
+WO-0075,Engineering,Material Submittal,High,ENG-B,2026-07-18,2026-07-27,,On Hold,24,19.5,1263.43
+WO-0076,Procurement,Material Request,Critical,PROC-A,2026-03-21,2026-03-28,2026-04-06,Completed,12,12.1,575.81
+WO-0077,Engineering,Technical Query,Medium,ENG-B,2026-08-01,2026-08-12,,On Hold,29,17.3,983.11
+WO-0078,Procurement,Vendor Follow-up,High,PROC-B,2026-07-25,2026-08-04,2026-08-04,Completed,6,7.4,365.36
+WO-0079,Procurement,Delivery Tracking,Low,PROC-A,2026-05-01,2026-05-11,,On Hold,10,7.4,355.96
+WO-0080,Construction,Work Front Preparation,Low,CON-A,2026-01-10,2026-01-29,2026-02-04,Completed,44,39.1,2267.35
+WO-0081,Construction,Work Front Preparation,Medium,CON-C,2026-02-09,2026-02-26,2026-03-09,Completed,27,29.4,1891.28
+WO-0082,Procurement,Material Request,Critical,PROC-B,2026-05-20,2026-05-24,2026-05-30,Completed,6,8.5,441.18
+WO-0083,Engineering,Drawing Revision,High,ENG-C,2026-01-06,2026-01-13,2026-01-26,Completed,21,19.6,1151.41
+WO-0084,Procurement,Delivery Tracking,High,PROC-A,2026-03-12,2026-03-24,2026-04-02,Completed,6,7.4,321.69
+WO-0085,Engineering,Drawing Revision,Medium,ENG-A,2026-02-14,2026-02-21,2026-02-23,Completed,15,19.6,1230.89
+WO-0086,Engineering,Drawing Revision,Critical,ENG-A,2026-07-06,2026-07-08,,In Progress,33,9.6,628.96
+WO-0087,QA/QC,Inspection,Medium,QA-A,2026-01-17,2026-01-28,2026-01-24,Completed,23,26.3,1367.35
+WO-0088,Construction,Installation,High,CON-A,2026-06-17,2026-06-28,2026-06-25,Completed,39,39.1,2196.94
+WO-0089,QA/QC,NCR Review,High,QA-B,2026-01-18,2026-01-23,2026-01-29,Completed,15,19.9,1057.98
+WO-0090,Construction,Site Rectification,High,CON-B,2026-04-01,2026-04-05,2026-04-14,Completed,32,28.8,1680.56
+WO-0091,Procurement,Delivery Tracking,High,PROC-B,2026-01-30,2026-02-06,2026-02-17,Completed,20,16.3,864.08
+WO-0092,Procurement,Delivery Tracking,Low,PROC-B,2026-06-29,2026-07-18,2026-07-21,Completed,7,6.2,309.3
+WO-0093,Engineering,Drawing Revision,Medium,ENG-B,2026-03-29,2026-04-10,2026-04-10,Completed,13,17.9,1036.81
+WO-0094,Procurement,Material Request,High,PROC-B,2026-04-24,2026-05-05,2026-05-17,Completed,19,18.7,941.82
+WO-0095,Construction,Site Rectification,Low,CON-B,2026-06-03,2026-06-14,,In Progress,59,24.6,1387.12
+WO-0096,Engineering,Material Submittal,Medium,ENG-B,2026-05-17,2026-06-01,,In Progress,12,10.0,617.5
+WO-0097,QA/QC,Inspection,High,QA-C,2026-04-20,2026-04-30,2026-05-05,Completed,4,5.7,277.97
+WO-0098,Planning,Recovery Planning,High,PLAN-B,2026-01-23,2026-01-30,2026-02-08,Completed,20,25.7,1341.05
+WO-0099,Procurement,Material Request,Medium,PROC-A,2026-05-16,2026-05-28,,In Progress,7,2.3,104.15
+WO-0100,Construction,Installation,Medium,CON-C,2026-05-07,2026-05-23,,On Hold,46,47.8,2692.29
+WO-0101,Planning,Lookahead Review,Medium,PLAN-A,2026-05-01,2026-05-18,2026-05-23,Completed,15,16.9,900.03
+WO-0102,QA/QC,Inspection,Medium,QA-B,2026-01-20,2026-02-05,2026-02-14,Completed,21,17.4,995.27
+WO-0103,Construction,Punch List,Medium,CON-B,2026-05-09,2026-05-16,,Not Started,31,8.4,507.73
+WO-0104,Engineering,Material Submittal,Critical,ENG-C,2026-05-14,2026-05-18,2026-05-19,Completed,29,36.0,2034.51
+WO-0105,Construction,Site Rectification,Low,CON-A,2026-05-23,2026-06-14,,Not Started,48,23.2,1383.55
+WO-0106,Engineering,Technical Query,Medium,ENG-C,2026-06-28,2026-07-07,2026-07-15,Completed,29,38.8,2556.02
+WO-0107,Construction,Installation,High,CON-B,2026-05-11,2026-05-20,2026-05-17,Completed,23,23.5,1456.44
+WO-0108,Engineering,Drawing Revision,Medium,ENG-B,2026-07-21,2026-08-05,,On Hold,10,9.4,603.76
+WO-0109,Construction,Punch List,Medium,CON-C,2026-07-17,2026-08-04,2026-08-08,Completed,53,63.4,3918.15
+WO-0110,Procurement,Vendor Follow-up,Medium,PROC-B,2026-07-27,2026-08-06,,In Progress,17,7.5,354.24
+WO-0111,Construction,Punch List,High,CON-C,2026-02-05,2026-02-16,2026-02-10,Completed,16,20.2,1187.42
+WO-0112,Engineering,Design Review,High,ENG-B,2026-04-26,2026-05-01,,Not Started,30,16.6,1016.05
+WO-0113,QA/QC,Quality Documentation,Critical,QA-B,2026-02-27,2026-03-06,2026-03-08,Completed,8,10.7,585.96
+WO-0114,Engineering,Material Submittal,Medium,ENG-A,2026-01-21,2026-02-01,2026-02-07,Completed,35,30.5,1821.76
+WO-0115,QA/QC,Inspection,Medium,QA-C,2026-07-23,2026-07-31,,On Hold,4,2.8,154.06
+WO-0116,QA/QC,Inspection,High,QA-A,2026-05-27,2026-06-01,,Not Started,6,4.0,223.19
+WO-0117,Construction,Installation,Medium,CON-B,2026-01-12,2026-01-24,2026-01-31,Completed,60,73.6,3939.27
+WO-0118,Construction,Site Rectification,Low,CON-B,2026-05-20,2026-06-09,2026-06-15,Completed,54,60.0,3271.55
+WO-0119,Engineering,Material Submittal,Low,ENG-A,2026-01-12,2026-01-28,2026-01-30,Completed,38,35.1,2129.49
+WO-0120,Procurement,Delivery Tracking,Medium,PROC-B,2026-04-22,2026-05-10,2026-05-26,Completed,8,9.0,436.08
+WO-0121,Planning,Lookahead Review,High,PLAN-B,2026-01-21,2026-01-27,2026-02-03,Completed,7,7.0,397.54
+WO-0122,QA/QC,Quality Documentation,Medium,QA-A,2026-07-06,2026-07-22,,In Progress,5,3.7,188.54
+WO-0123,Procurement,Vendor Follow-up,Critical,PROC-A,2026-06-05,2026-06-07,2026-06-14,Completed,14,14.5,771.78
+WO-0124,Engineering,Drawing Revision,High,ENG-B,2026-04-06,2026-04-12,2026-04-12,Completed,28,24.5,1612.95
+WO-0125,Construction,Work Front Preparation,Critical,CON-A,2026-03-09,2026-03-12,,On Hold,28,29.4,1609.78
+WO-0126,Engineering,Design Review,Medium,ENG-C,2026-04-24,2026-05-11,2026-05-13,Completed,12,13.9,830.67
+WO-0127,QA/QC,NCR Review,High,QA-C,2026-06-13,2026-06-25,2026-06-27,Completed,10,11.2,570.4
+WO-0128,Construction,Work Front Preparation,High,CON-C,2026-02-03,2026-02-11,,In Progress,56,30.8,1768.67
+WO-0129,Construction,Punch List,Critical,CON-C,2026-01-19,2026-01-23,2026-01-24,Completed,59,68.3,4077.52
+WO-0130,Procurement,Vendor Follow-up,Medium,PROC-A,2026-08-01,2026-08-16,2026-08-16,Completed,13,18.4,895.7
+WO-0131,QA/QC,Inspection,Medium,QA-C,2026-05-22,2026-05-31,2026-05-31,Completed,20,24.3,1301.76
+WO-0132,Construction,Punch List,High,CON-C,2026-06-04,2026-06-08,2026-06-15,Completed,51,47.8,2844.12
+WO-0133,Construction,Installation,Medium,CON-C,2026-05-20,2026-06-06,2026-06-09,Completed,53,56.4,3270.48
+WO-0134,Construction,Punch List,Medium,CON-B,2026-04-29,2026-05-11,,On Hold,30,27.9,1803.62
+WO-0135,Engineering,Technical Query,Medium,ENG-A,2026-03-23,2026-04-06,2026-04-12,Completed,17,17.8,1142.65
+WO-0136,QA/QC,NCR Review,High,QA-C,2026-07-04,2026-07-10,,In Progress,18,8.3,390.64
+WO-0137,Planning,Recovery Planning,Critical,PLAN-A,2026-05-30,2026-06-03,2026-06-04,Completed,19,18.7,927.5
+WO-0138,Engineering,Drawing Revision,High,ENG-C,2026-04-04,2026-04-08,2026-04-10,Completed,20,21.0,1300.8
+WO-0139,Construction,Installation,Low,CON-A,2026-04-11,2026-05-02,2026-05-09,Completed,22,26.2,1501.83
+WO-0140,Engineering,Design Review,Low,ENG-B,2026-07-25,2026-08-19,,In Progress,40,39.7,2387.75
+WO-0141,QA/QC,Test Package,Medium,QA-C,2026-08-01,2026-08-19,,In Progress,15,4.4,226.89
+WO-0142,QA/QC,Inspection,Medium,QA-B,2026-06-17,2026-07-05,2026-07-01,Completed,20,26.9,1304.4
+WO-0143,Construction,Installation,Medium,CON-C,2026-01-29,2026-02-05,2026-02-06,Completed,36,45.0,2584.64
+WO-0144,Procurement,Purchase Review,High,PROC-A,2026-06-30,2026-07-07,2026-07-08,Completed,18,16.4,866.45
+WO-0145,QA/QC,Test Package,High,QA-C,2026-06-24,2026-07-05,,In Progress,12,4.7,272.27
+WO-0146,QA/QC,Test Package,High,QA-C,2026-06-30,2026-07-11,2026-07-12,Completed,12,11.8,629.65
+WO-0147,Construction,Work Front Preparation,High,CON-A,2026-03-16,2026-03-21,,In Progress,51,31.0,1698.13
+WO-0148,Construction,Site Rectification,Low,CON-C,2026-07-09,2026-07-26,,On Hold,24,5.9,339.09
+WO-0149,Construction,Installation,High,CON-A,2026-01-02,2026-01-13,2026-01-21,Completed,58,70.8,4516.0
+WO-0150,Engineering,Drawing Revision,Medium,ENG-C,2026-01-10,2026-01-23,,On Hold,33,11.8,778.99
+WO-0151,Procurement,Delivery Tracking,High,PROC-A,2026-03-18,2026-03-26,,In Progress,20,19.1,852.19
+WO-0152,Construction,Site Rectification,Medium,CON-A,2026-03-26,2026-04-13,2026-04-16,Completed,21,17.0,960.53
+WO-0153,QA/QC,NCR Review,Medium,QA-C,2026-04-14,2026-04-29,2026-05-01,Completed,7,7.1,352.43
+WO-0154,QA/QC,NCR Review,Medium,QA-B,2026-03-26,2026-04-11,2026-04-15,Completed,11,9.2,443.0
+WO-0155,QA/QC,Quality Documentation,High,QA-C,2026-07-17,2026-07-22,,In Progress,13,5.0,288.76
+WO-0156,Construction,Work Front Preparation,High,CON-C,2026-04-06,2026-04-18,2026-04-28,Completed,52,64.6,3863.25
+WO-0157,Procurement,Purchase Review,Medium,PROC-B,2026-01-20,2026-01-27,2026-01-27,Completed,20,17.9,835.3
+WO-0158,Construction,Installation,High,CON-C,2026-05-30,2026-06-11,,In Progress,39,21.6,1282.94
+WO-0159,Construction,Site Rectification,High,CON-B,2026-03-07,2026-03-14,2026-03-17,Completed,37,53.5,3430.7
+WO-0160,Engineering,Material Submittal,Low,ENG-B,2026-02-16,2026-03-02,,In Progress,32,31.3,1907.71
+WO-0161,Engineering,Drawing Revision,High,ENG-B,2026-01-31,2026-02-10,2026-02-14,Completed,22,29.5,1950.37
+WO-0162,Planning,Recovery Planning,High,PLAN-B,2026-05-17,2026-05-24,2026-05-28,Completed,12,15.6,778.28
+WO-0163,Construction,Installation,Medium,CON-A,2026-01-26,2026-02-09,2026-02-22,Completed,35,38.0,2245.32
+WO-0164,Procurement,Material Request,Low,PROC-B,2026-03-01,2026-03-21,2026-04-04,Completed,7,7.5,345.79
+WO-0165,Construction,Punch List,High,CON-B,2026-05-23,2026-06-01,2026-06-04,Completed,60,68.5,4184.32
+WO-0166,QA/QC,Test Package,Medium,QA-C,2026-05-02,2026-05-12,2026-05-19,Completed,18,25.7,1366.61
+WO-0167,Engineering,Drawing Revision,Medium,ENG-B,2026-06-15,2026-06-29,2026-06-28,Completed,20,16.7,1017.77
+WO-0168,Construction,Installation,High,CON-A,2026-07-25,2026-08-01,2026-08-06,Completed,10,12.8,790.15
+WO-0169,Procurement,Vendor Follow-up,High,PROC-A,2026-04-12,2026-04-21,2026-04-29,Completed,20,24.4,1133.55
+WO-0170,QA/QC,Quality Documentation,Medium,QA-C,2026-05-01,2026-05-11,2026-05-18,Completed,22,17.8,945.71
+WO-0171,Construction,Work Front Preparation,Medium,CON-A,2026-03-26,2026-04-08,2026-04-06,Completed,53,54.0,3344.79
+WO-0172,Construction,Work Front Preparation,Medium,CON-C,2026-07-23,2026-08-01,2026-08-13,Completed,21,25.6,1355.51
+WO-0173,Engineering,Design Review,Critical,ENG-C,2026-01-13,2026-01-20,2026-01-20,Completed,17,13.7,858.97
+WO-0174,QA/QC,Quality Documentation,High,QA-A,2026-01-02,2026-01-06,2026-01-08,Completed,21,27.9,1520.86
+WO-0175,Procurement,Vendor Follow-up,Low,PROC-A,2026-05-15,2026-05-29,2026-06-03,Completed,14,13.6,644.52
+WO-0176,QA/QC,Quality Documentation,Medium,QA-A,2026-06-28,2026-07-09,,On Hold,24,6.7,342.63
+WO-0177,Construction,Installation,High,CON-C,2026-02-13,2026-02-23,2026-03-15,Completed,46,63.6,4065.85
+WO-0178,Engineering,Material Submittal,Medium,ENG-A,2026-06-25,2026-07-10,,In Progress,28,10.5,606.55
+WO-0179,Procurement,Purchase Review,Critical,PROC-B,2026-02-11,2026-02-18,2026-02-22,Completed,13,13.6,693.76
+WO-0180,Procurement,Material Request,Medium,PROC-B,2026-01-14,2026-01-27,2026-02-08,Completed,15,18.2,936.83
+WO-0181,QA/QC,NCR Review,Medium,QA-B,2026-04-21,2026-05-08,2026-05-08,Completed,13,17.1,939.78
+WO-0182,Engineering,Drawing Revision,Medium,ENG-C,2026-02-09,2026-02-21,2026-02-18,Completed,27,23.4,1333.58
+WO-0183,QA/QC,Quality Documentation,Low,QA-A,2026-04-01,2026-04-13,2026-04-17,Completed,17,17.9,855.06
+WO-0184,Planning,Progress Verification,Medium,PLAN-A,2026-06-25,2026-07-04,2026-07-06,Completed,19,18.6,988.16
+WO-0185,Procurement,Delivery Tracking,Medium,PROC-A,2026-07-04,2026-07-20,2026-07-27,Completed,12,9.7,459.57
+WO-0186,Procurement,Purchase Review,High,PROC-B,2026-04-23,2026-04-29,2026-05-03,Completed,9,9.5,442.42
+WO-0187,Construction,Work Front Preparation,Critical,CON-A,2026-03-25,2026-03-29,2026-03-31,Completed,46,42.8,2778.79
+WO-0188,Engineering,Design Review,Critical,ENG-B,2026-07-01,2026-07-08,2026-07-07,Completed,34,33.9,2008.46
+WO-0189,Engineering,Material Submittal,High,ENG-A,2026-04-25,2026-05-05,2026-05-05,Completed,34,39.2,2610.15
+WO-0190,QA/QC,Inspection,Low,QA-A,2026-06-18,2026-07-09,,In Progress,24,20.2,1168.53
+WO-0191,QA/QC,Inspection,Low,QA-A,2026-05-11,2026-05-28,2026-05-28,Completed,22,31.9,1669.1
+WO-0192,QA/QC,Inspection,Low,QA-C,2026-02-06,2026-02-27,2026-02-26,Completed,20,22.3,1165.11
+WO-0193,QA/QC,Quality Documentation,Medium,QA-B,2026-01-12,2026-01-19,2026-01-28,Completed,9,10.2,541.76
+WO-0194,QA/QC,Quality Documentation,Critical,QA-A,2026-07-24,2026-07-27,,In Progress,17,14.1,802.33
+WO-0195,QA/QC,Quality Documentation,Medium,QA-C,2026-02-24,2026-03-07,2026-03-05,Completed,21,19.4,980.27
+WO-0196,QA/QC,Test Package,High,QA-B,2026-05-16,2026-05-26,2026-05-22,Completed,7,8.4,471.32
+WO-0197,Construction,Site Rectification,Critical,CON-C,2026-01-22,2026-01-25,2026-02-06,Completed,21,21.9,1182.68
+WO-0198,QA/QC,NCR Review,Medium,QA-B,2026-02-17,2026-03-06,2026-03-02,Completed,9,8.0,403.19
+WO-0199,QA/QC,Inspection,High,QA-A,2026-05-05,2026-05-15,2026-05-14,Completed,19,20.3,1064.23
+WO-0200,Construction,Work Front Preparation,Medium,CON-A,2026-05-25,2026-06-04,2026-06-06,Completed,44,51.4,3189.77
+WO-0201,Construction,Installation,Medium,CON-B,2026-07-18,2026-08-02,2026-08-14,Completed,23,33.2,1776.43
+WO-0202,Procurement,Vendor Follow-up,Medium,PROC-A,2026-04-26,2026-05-08,,On Hold,6,2.4,124.23
+WO-0203,Construction,Site Rectification,High,CON-C,2026-06-11,2026-06-17,,In Progress,13,8.5,508.44
+WO-0204,Engineering,Technical Query,Medium,ENG-B,2026-05-12,2026-05-21,,On Hold,16,5.0,288.97
+WO-0205,QA/QC,NCR Review,High,QA-C,2026-04-11,2026-04-19,2026-04-28,Completed,18,23.4,1202.96
+WO-0206,Procurement,Delivery Tracking,Medium,PROC-B,2026-03-25,2026-04-12,,Not Started,14,12.3,583.02
+WO-0207,Planning,Progress Verification,Medium,PLAN-B,2026-08-01,2026-08-13,2026-08-16,Completed,19,24.9,1501.95
+WO-0208,Procurement,Material Request,Low,PROC-B,2026-01-05,2026-01-18,2026-01-28,Completed,16,14.2,710.91
+WO-0209,Engineering,Technical Query,Low,ENG-B,2026-03-06,2026-03-18,2026-03-28,Completed,27,34.3,2267.28
+WO-0210,QA/QC,Inspection,High,QA-A,2026-02-24,2026-03-02,2026-03-11,Completed,18,24.0,1394.51
+WO-0211,QA/QC,NCR Review,Medium,QA-A,2026-04-09,2026-04-27,2026-04-29,Completed,13,11.6,645.52
+WO-0212,Procurement,Vendor Follow-up,High,PROC-A,2026-01-18,2026-01-24,2026-01-27,Completed,9,9.6,484.32
+WO-0213,Procurement,Material Request,High,PROC-A,2026-07-12,2026-07-22,,On Hold,13,5.3,265.04
+WO-0214,QA/QC,Test Package,High,QA-C,2026-01-07,2026-01-19,2026-01-18,Completed,16,15.9,754.05
+WO-0215,Planning,Progress Verification,Medium,PLAN-A,2026-03-03,2026-03-20,2026-04-01,Completed,4,3.5,209.71
+WO-0216,Construction,Site Rectification,Medium,CON-A,2026-07-15,2026-07-23,2026-07-26,Completed,26,24.4,1560.92
+WO-0217,Planning,Recovery Planning,Medium,PLAN-B,2026-04-19,2026-04-27,2026-04-29,Completed,12,16.8,1029.66
+WO-0218,Engineering,Technical Query,Medium,ENG-C,2026-07-15,2026-07-26,,In Progress,23,6.3,388.88
+WO-0219,QA/QC,Inspection,Medium,QA-C,2026-06-18,2026-06-26,2026-06-28,Completed,4,3.6,207.73
+WO-0220,Construction,Site Rectification,Medium,CON-A,2026-07-11,2026-07-29,2026-08-02,Completed,37,46.7,2781.36
+WO-0221,Engineering,Material Submittal,Medium,ENG-A,2026-05-08,2026-05-20,,In Progress,15,9.5,535.81
+WO-0222,Procurement,Vendor Follow-up,Low,PROC-B,2026-04-09,2026-04-23,2026-05-02,Completed,16,15.1,691.91
+WO-0223,Planning,Lookahead Review,Medium,PLAN-A,2026-05-27,2026-06-04,,In Progress,9,5.7,285.32
+WO-0224,QA/QC,Quality Documentation,High,QA-B,2026-03-25,2026-04-05,2026-04-02,Completed,13,15.7,818.08
+WO-0225,Construction,Work Front Preparation,Critical,CON-A,2026-07-07,2026-07-12,2026-07-12,Completed,44,45.1,2837.37
+WO-0226,Procurement,Delivery Tracking,Low,PROC-B,2026-07-08,2026-07-27,,In Progress,16,4.0,214.91
+WO-0227,Construction,Installation,Low,CON-A,2026-05-14,2026-06-06,,In Progress,15,9.4,567.11
+WO-0228,QA/QC,Inspection,Medium,QA-A,2026-03-02,2026-03-13,2026-03-13,Completed,14,11.9,584.52
+WO-0229,Procurement,Material Request,Medium,PROC-A,2026-04-26,2026-05-08,2026-05-17,Completed,9,9.8,471.31
+WO-0230,Procurement,Material Request,Medium,PROC-B,2026-07-31,2026-08-10,2026-08-16,Completed,10,8.3,384.75
+WO-0231,Procurement,Vendor Follow-up,Low,PROC-B,2026-04-26,2026-05-13,,In Progress,7,1.8,92.6
+WO-0232,Engineering,Drawing Revision,High,ENG-B,2026-06-25,2026-07-03,2026-07-05,Completed,12,11.1,717.18
+WO-0233,Procurement,Material Request,Critical,PROC-B,2026-02-01,2026-02-04,2026-02-12,Completed,16,13.1,660.43
+WO-0234,Engineering,Drawing Revision,Critical,ENG-B,2026-03-13,2026-03-19,2026-03-15,Completed,23,28.1,1759.2
+WO-0235,Planning,Recovery Planning,Low,PLAN-B,2026-04-09,2026-04-23,,In Progress,20,20.9,1172.04
+WO-0236,Engineering,Material Submittal,High,ENG-B,2026-05-03,2026-05-15,2026-05-24,Completed,19,15.6,1042.98
+WO-0237,QA/QC,Quality Documentation,Medium,QA-C,2026-03-01,2026-03-09,2026-03-11,Completed,21,27.9,1598.49
+WO-0238,Engineering,Drawing Revision,Medium,ENG-B,2026-04-01,2026-04-10,2026-04-14,Completed,30,37.7,2590.92
+WO-0239,Construction,Punch List,High,CON-B,2026-05-19,2026-05-30,2026-06-02,Completed,24,28.6,1500.19
+WO-0240,Construction,Site Rectification,Critical,CON-A,2026-07-26,2026-07-30,2026-07-27,Completed,19,25.7,1623.78
+WO-0241,Planning,Lookahead Review,High,PLAN-B,2026-05-31,2026-06-08,2026-06-03,Completed,9,11.5,630.04
+WO-0242,Construction,Work Front Preparation,High,CON-A,2026-07-01,2026-07-07,2026-07-10,Completed,54,43.3,2648.13
+WO-0243,Construction,Installation,Medium,CON-B,2026-07-27,2026-08-13,2026-08-16,Completed,57,48.5,2746.33
+WO-0244,QA/QC,Inspection,High,QA-C,2026-06-13,2026-06-17,2026-06-13,Completed,6,7.6,359.87
+WO-0245,QA/QC,Quality Documentation,Critical,QA-B,2026-05-07,2026-05-12,2026-05-18,Completed,19,24.9,1329.98
+WO-0246,Procurement,Vendor Follow-up,Medium,PROC-A,2026-07-24,2026-08-04,2026-08-12,Completed,6,6.3,320.86
+WO-0247,Construction,Installation,Medium,CON-C,2026-05-04,2026-05-17,,In Progress,20,9.6,620.48
+WO-0248,QA/QC,Test Package,High,QA-B,2026-03-02,2026-03-12,2026-03-15,Completed,19,17.1,870.87
+WO-0249,QA/QC,Test Package,High,QA-C,2026-06-03,2026-06-08,2026-06-09,Completed,24,32.4,1630.61
+WO-0250,QA/QC,Quality Documentation,High,QA-B,2026-01-24,2026-02-02,2026-02-05,Completed,18,14.9,772.28
+WO-0251,QA/QC,Test Package,Medium,QA-A,2026-07-12,2026-07-20,2026-07-21,Completed,22,23.1,1219.18
+WO-0252,Planning,Recovery Planning,Medium,PLAN-A,2026-05-02,2026-05-10,2026-05-12,Completed,20,26.4,1523.23
+WO-0253,Construction,Installation,Critical,CON-B,2026-02-14,2026-02-17,2026-02-24,Completed,15,21.7,1306.41
+WO-0254,Procurement,Delivery Tracking,Medium,PROC-A,2026-01-23,2026-02-07,2026-02-12,Completed,11,12.5,661.07
+WO-0255,Engineering,Material Submittal,Low,ENG-A,2026-02-07,2026-02-20,2026-02-25,Completed,30,36.8,2340.57
+WO-0256,Construction,Punch List,Medium,CON-A,2026-06-08,2026-06-15,,On Hold,13,12.8,814.67
+WO-0257,Engineering,Technical Query,Medium,ENG-B,2026-06-28,2026-07-08,,On Hold,36,17.0,1117.59
+WO-0258,Construction,Installation,Medium,CON-A,2026-07-30,2026-08-17,,In Progress,13,4.4,247.15
+WO-0259,Construction,Punch List,High,CON-C,2026-05-26,2026-06-02,,In Progress,25,6.1,346.47
+WO-0260,Engineering,Technical Query,High,ENG-C,2026-04-12,2026-04-16,2026-04-18,Completed,36,33.0,2233.22
+WO-0261,Construction,Site Rectification,Medium,CON-B,2026-07-11,2026-07-22,2026-07-27,Completed,46,43.4,2390.14
+WO-0262,Engineering,Material Submittal,Medium,ENG-C,2026-01-03,2026-01-12,2026-01-14,Completed,22,21.2,1415.76
+WO-0263,QA/QC,Test Package,Medium,QA-B,2026-03-31,2026-04-11,2026-04-14,Completed,20,17.3,910.87
+WO-0264,Construction,Site Rectification,Medium,CON-C,2026-06-05,2026-06-16,2026-06-18,Completed,27,32.8,2072.72
+WO-0265,QA/QC,Test Package,Medium,QA-C,2026-07-15,2026-07-22,2026-07-22,Completed,8,11.6,577.31
+WO-0266,QA/QC,Quality Documentation,High,QA-C,2026-07-01,2026-07-08,2026-07-02,Completed,19,26.4,1438.44
+WO-0267,Construction,Punch List,High,CON-C,2026-02-16,2026-02-27,2026-03-09,Completed,56,51.5,3134.97
+WO-0268,QA/QC,Inspection,Medium,QA-A,2026-07-10,2026-07-23,2026-07-16,Completed,13,14.3,688.51
+WO-0269,Engineering,Design Review,Medium,ENG-A,2026-05-09,2026-05-26,2026-05-30,Completed,11,15.9,961.54
+WO-0270,Planning,Recovery Planning,Low,PLAN-A,2026-07-19,2026-07-31,,On Hold,14,2.9,153.15
+WO-0271,Procurement,Vendor Follow-up,Medium,PROC-A,2026-05-06,2026-05-15,2026-05-18,Completed,16,22.8,1077.25
+WO-0272,Engineering,Drawing Revision,High,ENG-A,2026-03-24,2026-03-28,2026-03-29,Completed,22,19.4,1184.01
+WO-0273,Construction,Punch List,Low,CON-A,2026-03-18,2026-04-06,2026-04-06,Completed,37,51.0,3310.01
+WO-0274,QA/QC,Quality Documentation,Medium,QA-A,2026-02-12,2026-02-19,2026-02-20,Completed,8,9.0,433.88
+WO-0275,Construction,Installation,Medium,CON-C,2026-03-07,2026-03-23,2026-03-31,Completed,11,9.1,488.47
+WO-0276,QA/QC,Inspection,Medium,QA-B,2026-06-29,2026-07-09,2026-07-08,Completed,7,8.4,406.3
+WO-0277,Procurement,Material Request,Medium,PROC-A,2026-03-14,2026-03-22,2026-03-24,Completed,11,14.7,786.1
+WO-0278,QA/QC,Quality Documentation,Medium,QA-A,2026-05-21,2026-05-31,2026-05-27,Completed,4,5.4,294.05
+WO-0279,Engineering,Design Review,High,ENG-A,2026-07-05,2026-07-12,,In Progress,26,6.3,421.42
+WO-0280,Procurement,Delivery Tracking,Medium,PROC-B,2026-04-20,2026-04-28,,In Progress,8,7.7,410.3
+WO-0281,QA/QC,Inspection,Medium,QA-B,2026-02-16,2026-03-01,2026-02-21,Completed,16,20.0,1045.42
+WO-0282,QA/QC,NCR Review,Low,QA-C,2026-07-05,2026-07-16,,On Hold,19,14.8,723.33
+WO-0283,QA/QC,Test Package,High,QA-C,2026-08-03,2026-08-14,,In Progress,18,7.6,383.0
+WO-0284,Construction,Punch List,Critical,CON-C,2026-03-28,2026-04-02,2026-04-05,Completed,53,70.9,4508.01
+WO-0285,Construction,Installation,High,CON-A,2026-05-10,2026-05-16,2026-05-18,Completed,30,28.7,1853.42
+WO-0286,Engineering,Drawing Revision,Medium,ENG-B,2026-04-14,2026-04-22,2026-04-29,Completed,36,36.2,2504.18
+WO-0287,Procurement,Material Request,Low,PROC-B,2026-01-10,2026-01-20,2026-01-31,Completed,17,24.1,1133.59
+WO-0288,Engineering,Drawing Revision,High,ENG-B,2026-05-24,2026-06-02,2026-06-05,Completed,14,14.3,959.81
+WO-0289,Planning,Lookahead Review,Medium,PLAN-B,2026-06-29,2026-07-06,2026-07-03,Completed,17,14.8,841.99
+WO-0290,Engineering,Material Submittal,Medium,ENG-A,2026-07-03,2026-07-11,,On Hold,15,8.7,563.6
+WO-0291,Planning,Progress Verification,Critical,PLAN-A,2026-05-16,2026-05-22,2026-05-23,Completed,20,25.0,1290.03
+WO-0292,Procurement,Material Request,Medium,PROC-B,2026-05-10,2026-05-23,2026-05-20,Completed,13,18.6,892.47
+WO-0293,Engineering,Material Submittal,High,ENG-C,2026-05-12,2026-05-24,2026-05-31,Completed,21,20.8,1258.6
+WO-0294,Construction,Punch List,Medium,CON-C,2026-06-13,2026-07-01,2026-07-14,Completed,47,55.0,3339.21
+WO-0295,QA/QC,Test Package,High,QA-B,2026-07-26,2026-07-31,2026-07-31,Completed,5,6.4,311.3
+WO-0296,QA/QC,Test Package,Low,QA-A,2026-06-26,2026-07-15,2026-07-13,Completed,18,15.6,884.99
+WO-0297,Construction,Punch List,High,CON-C,2026-04-10,2026-04-18,2026-04-15,Completed,34,48.8,2742.05
+WO-0298,Construction,Installation,High,CON-A,2026-06-08,2026-06-17,2026-06-29,Completed,48,44.5,2734.52
+WO-0299,Engineering,Material Submittal,Medium,ENG-C,2026-01-20,2026-01-29,2026-02-02,Completed,35,31.7,2134.67
+WO-0300,Engineering,Material Submittal,High,ENG-A,2026-01-11,2026-01-15,2026-01-21,Completed,27,30.2,1921.06
+WO-0301,QA/QC,Test Package,Medium,QA-A,2026-05-14,2026-05-29,2026-06-02,Completed,16,15.0,758.95
+WO-0302,QA/QC,NCR Review,Critical,QA-C,2026-05-16,2026-05-18,2026-05-19,Completed,18,17.2,931.34
+WO-0303,Planning,Progress Verification,Critical,PLAN-B,2026-04-08,2026-04-14,2026-04-20,Completed,4,4.2,248.7
+WO-0304,QA/QC,Inspection,Medium,QA-C,2026-02-19,2026-03-06,2026-03-02,Completed,21,24.1,1300.73
+WO-0305,Engineering,Drawing Revision,High,ENG-B,2026-08-02,2026-08-14,,On Hold,35,35.0,2309.57
+WO-0306,Engineering,Material Submittal,High,ENG-A,2026-01-23,2026-01-29,2026-02-05,Completed,22,24.1,1477.73
+WO-0307,QA/QC,Quality Documentation,High,QA-C,2026-01-02,2026-01-06,2026-01-04,Completed,15,21.0,1008.3
+WO-0308,Procurement,Delivery Tracking,High,PROC-B,2026-07-15,2026-07-25,2026-07-30,Completed,8,8.4,433.62
+WO-0309,Construction,Punch List,Medium,CON-C,2026-06-15,2026-06-22,2026-06-28,Completed,12,9.6,574.21
+WO-0310,Construction,Installation,Medium,CON-C,2026-07-09,2026-07-19,,In Progress,19,7.4,465.1
+WO-0311,Engineering,Drawing Revision,High,ENG-C,2026-01-14,2026-01-26,2026-01-31,Completed,12,14.1,969.78
+WO-0312,QA/QC,NCR Review,Low,QA-C,2026-01-18,2026-02-03,2026-02-08,Completed,13,16.3,791.26
+WO-0313,Construction,Site Rectification,Critical,CON-A,2026-01-02,2026-01-09,2026-01-10,Completed,37,45.9,2590.17
+WO-0314,Construction,Work Front Preparation,Medium,CON-B,2026-05-05,2026-05-14,,Not Started,18,6.6,406.3
+WO-0315,Construction,Installation,High,CON-C,2026-06-11,2026-06-21,2026-07-02,Completed,12,13.9,821.97
+WO-0316,Planning,Recovery Planning,High,PLAN-A,2026-04-04,2026-04-12,2026-04-17,Completed,20,16.1,843.49
+WO-0317,Planning,Progress Verification,High,PLAN-A,2026-04-25,2026-05-01,2026-05-04,Completed,15,12.4,728.05
+WO-0318,Engineering,Technical Query,Medium,ENG-A,2026-06-21,2026-07-06,2026-07-10,Completed,37,45.2,2585.8
+WO-0319,Planning,Lookahead Review,High,PLAN-B,2026-05-29,2026-06-08,2026-06-08,Completed,6,6.8,367.56
+WO-0320,Planning,Recovery Planning,Medium,PLAN-B,2026-05-05,2026-05-21,,In Progress,18,4.8,274.97
+WO-0321,Engineering,Drawing Revision,Medium,ENG-C,2026-07-03,2026-07-20,,In Progress,15,9.1,533.93
+WO-0322,Engineering,Material Submittal,Low,ENG-A,2026-02-02,2026-02-17,2026-02-23,Completed,17,15.6,1074.38
+WO-0323,Construction,Installation,High,CON-C,2026-06-19,2026-06-26,2026-07-04,Completed,40,54.5,2963.52
+WO-0324,Procurement,Vendor Follow-up,High,PROC-A,2026-06-09,2026-06-18,2026-06-24,Completed,5,4.4,199.48
+WO-0325,Procurement,Purchase Review,High,PROC-A,2026-02-15,2026-02-19,2026-03-01,Completed,6,5.2,260.85
+WO-0326,Planning,Schedule Update,High,PLAN-B,2026-05-14,2026-05-18,2026-05-24,Completed,11,14.3,768.5
+WO-0327,Procurement,Material Request,Medium,PROC-B,2026-05-03,2026-05-11,,In Progress,16,3.3,168.47
+WO-0328,Engineering,Design Review,Medium,ENG-B,2026-06-17,2026-07-05,2026-07-05,Completed,17,18.3,1167.26
+WO-0329,QA/QC,Quality Documentation,Medium,QA-C,2026-03-12,2026-03-22,2026-03-26,Completed,19,21.2,1231.9
+WO-0330,Construction,Work Front Preparation,High,CON-C,2026-01-31,2026-02-06,2026-02-18,Completed,35,45.9,2865.03
+WO-0331,Construction,Installation,Medium,CON-C,2026-01-02,2026-01-11,2026-01-17,Completed,14,16.7,1026.12
+WO-0332,Planning,Recovery Planning,High,PLAN-B,2026-07-02,2026-07-13,2026-07-18,Completed,20,19.7,983.16
+WO-0333,Construction,Punch List,High,CON-C,2026-01-10,2026-01-14,2026-01-21,Completed,27,28.5,1700.83
+WO-0334,Construction,Installation,Critical,CON-C,2026-03-14,2026-03-17,2026-03-17,Completed,22,24.1,1382.24
+WO-0335,Engineering,Drawing Revision,Medium,ENG-A,2026-05-24,2026-06-08,,Not Started,40,37.8,2528.49
+WO-0336,Construction,Work Front Preparation,Critical,CON-C,2026-05-04,2026-05-11,2026-05-19,Completed,47,45.5,2597.27
+WO-0337,Procurement,Vendor Follow-up,High,PROC-A,2026-07-24,2026-08-02,2026-08-03,Completed,11,10.6,468.33
+WO-0338,Construction,Site Rectification,Low,CON-A,2026-05-02,2026-05-22,2026-05-22,Completed,57,64.1,3509.33
+WO-0339,Construction,Site Rectification,Medium,CON-A,2026-08-02,2026-08-18,,Not Started,17,13.2,800.78
+WO-0340,Construction,Installation,High,CON-B,2026-06-08,2026-06-16,2026-06-10,Completed,58,80.9,4512.29
+WO-0341,Engineering,Drawing Revision,Low,ENG-B,2026-05-03,2026-05-14,,In Progress,19,5.7,358.35
+WO-0342,QA/QC,Inspection,Low,QA-A,2026-04-08,2026-04-21,,In Progress,9,3.6,187.89
+WO-0343,Construction,Site Rectification,Medium,CON-B,2026-02-23,2026-03-13,2026-03-11,Completed,27,38.8,2365.0
+WO-0344,Procurement,Delivery Tracking,High,PROC-B,2026-04-08,2026-04-14,2026-04-23,Completed,8,8.6,383.73
+WO-0345,Planning,Lookahead Review,High,PLAN-B,2026-03-06,2026-03-11,2026-03-14,Completed,10,12.1,664.81
+WO-0346,QA/QC,Test Package,Medium,QA-C,2026-07-27,2026-08-08,2026-08-04,Completed,23,21.4,1142.51
+WO-0347,Construction,Punch List,Critical,CON-B,2026-04-01,2026-04-06,2026-04-12,Completed,38,37.5,2259.77
+WO-0348,Engineering,Drawing Revision,High,ENG-B,2026-04-18,2026-04-23,2026-04-22,Completed,28,28.2,1685.63
+WO-0349,QA/QC,Quality Documentation,Medium,QA-B,2026-07-19,2026-08-06,2026-08-09,Completed,9,8.6,427.24
+WO-0350,Procurement,Material Request,Medium,PROC-B,2026-01-27,2026-02-04,2026-02-09,Completed,15,17.1,918.58
+WO-0351,Engineering,Drawing Revision,Low,ENG-B,2026-03-21,2026-04-07,2026-04-06,Completed,16,13.2,800.81
+WO-0352,Planning,Recovery Planning,Medium,PLAN-B,2026-05-21,2026-05-30,2026-05-30,Completed,18,21.8,1246.82
+WO-0353,Construction,Site Rectification,Critical,CON-B,2026-05-19,2026-05-23,2026-05-25,Completed,26,29.6,1831.52
+WO-0354,Engineering,Technical Query,Medium,ENG-A,2026-06-26,2026-07-10,,In Progress,26,22.8,1442.73
+WO-0355,Engineering,Material Submittal,Medium,ENG-A,2026-07-03,2026-07-16,2026-07-19,Completed,23,26.1,1741.17
+WO-0356,Construction,Site Rectification,Medium,CON-C,2026-05-17,2026-05-30,2026-06-10,Completed,28,30.6,1870.82
+WO-0357,Construction,Site Rectification,Low,CON-A,2026-05-17,2026-05-27,2026-06-04,Completed,55,59.7,3122.59
+WO-0358,Engineering,Design Review,Medium,ENG-B,2026-04-18,2026-05-02,2026-04-30,Completed,10,14.2,803.21
+WO-0359,Procurement,Material Request,Medium,PROC-A,2026-02-19,2026-03-04,,In Progress,10,10.3,471.84
+WO-0360,Planning,Progress Verification,Medium,PLAN-A,2026-05-14,2026-05-28,,In Progress,14,11.5,672.88
+WO-0361,Construction,Installation,Medium,CON-C,2026-03-18,2026-03-30,2026-04-14,Completed,17,16.2,935.39
+WO-0362,Engineering,Technical Query,Medium,ENG-B,2026-07-22,2026-07-29,,On Hold,38,12.6,835.55
+WO-0363,QA/QC,Quality Documentation,Low,QA-C,2026-03-28,2026-04-08,2026-04-10,Completed,21,20.0,1160.61
+WO-0364,Procurement,Delivery Tracking,High,PROC-B,2026-07-07,2026-07-17,,Not Started,11,6.7,320.39
+WO-0365,QA/QC,Quality Documentation,Medium,QA-A,2026-05-20,2026-06-01,,Not Started,23,15.4,732.85
+WO-0366,Engineering,Technical Query,High,ENG-C,2026-04-04,2026-04-16,2026-04-18,Completed,9,10.8,656.27
+WO-0367,Construction,Site Rectification,High,CON-C,2026-05-18,2026-05-30,2026-06-08,Completed,45,48.0,2702.83
+WO-0368,Engineering,Design Review,Low,ENG-A,2026-02-15,2026-02-26,2026-03-04,Completed,10,11.7,786.32
+WO-0369,Construction,Site Rectification,Low,CON-A,2026-06-05,2026-06-17,2026-06-14,Completed,15,15.5,956.14
+WO-0370,Planning,Lookahead Review,High,PLAN-A,2026-07-30,2026-08-03,2026-08-05,Completed,13,11.1,578.45
+WO-0371,Construction,Installation,High,CON-C,2026-04-09,2026-04-21,2026-05-04,Completed,50,58.1,3585.95
+WO-0372,Procurement,Delivery Tracking,High,PROC-B,2026-01-27,2026-02-08,2026-02-13,Completed,8,9.2,455.72
+WO-0373,Planning,Lookahead Review,Medium,PLAN-B,2026-04-06,2026-04-23,2026-04-20,Completed,11,14.3,868.1
+WO-0374,QA/QC,Quality Documentation,Medium,QA-B,2026-01-01,2026-01-12,2026-01-12,Completed,13,10.5,609.65
+WO-0375,Engineering,Technical Query,Low,ENG-C,2026-07-30,2026-08-17,,In Progress,17,10.1,585.09
+WO-0376,QA/QC,NCR Review,Medium,QA-B,2026-01-24,2026-02-09,2026-02-11,Completed,14,18.7,1022.68
+WO-0377,Construction,Installation,Medium,CON-B,2026-01-10,2026-01-18,2026-01-19,Completed,37,39.6,2505.63
+WO-0378,Procurement,Vendor Follow-up,High,PROC-A,2026-06-12,2026-06-20,2026-06-21,Completed,20,25.1,1124.93
+WO-0379,Construction,Work Front Preparation,Critical,CON-C,2026-05-28,2026-06-01,,In Progress,19,5.1,303.41
+WO-0380,Engineering,Material Submittal,Medium,ENG-B,2026-05-09,2026-05-27,2026-05-28,Completed,20,22.3,1442.74
+WO-0381,Engineering,Drawing Revision,Medium,ENG-B,2026-07-18,2026-07-30,,In Progress,35,12.7,768.34
+WO-0382,Construction,Site Rectification,Medium,CON-B,2026-06-07,2026-06-23,2026-06-29,Completed,24,31.0,1955.52
+WO-0383,Engineering,Design Review,Medium,ENG-C,2026-02-07,2026-02-14,2026-02-24,Completed,27,29.5,1655.25
+WO-0384,Engineering,Drawing Revision,Medium,ENG-C,2026-07-12,2026-07-27,,On Hold,17,13.1,798.27
+WO-0385,Planning,Schedule Update,Medium,PLAN-A,2026-03-14,2026-04-01,2026-04-08,Completed,4,4.9,296.67
+WO-0386,QA/QC,Inspection,Low,QA-C,2026-04-09,2026-04-26,2026-04-30,Completed,14,15.6,836.64
+WO-0387,Engineering,Drawing Revision,Medium,ENG-B,2026-05-24,2026-05-31,2026-05-31,Completed,39,40.0,2424.0
+WO-0388,Construction,Punch List,Critical,CON-C,2026-03-12,2026-03-17,2026-03-23,Completed,11,15.6,1003.25
+WO-0389,Engineering,Technical Query,High,ENG-C,2026-02-05,2026-02-15,,In Progress,22,15.1,930.42
+WO-0390,QA/QC,Test Package,Medium,QA-A,2026-02-22,2026-03-10,2026-03-08,Completed,8,9.1,439.96
+WO-0391,Planning,Progress Verification,High,PLAN-A,2026-03-23,2026-04-04,2026-04-12,Completed,14,18.8,963.7
+WO-0392,Engineering,Technical Query,High,ENG-B,2026-04-16,2026-04-24,2026-04-27,Completed,14,20.2,1297.15
+WO-0393,Construction,Punch List,Medium,CON-A,2026-06-25,2026-07-07,,In Progress,18,12.9,790.58
+WO-0394,QA/QC,Quality Documentation,Medium,QA-A,2026-02-11,2026-02-21,2026-02-23,Completed,4,5.6,322.95
+WO-0395,Engineering,Drawing Revision,High,ENG-A,2026-02-15,2026-02-26,2026-03-05,Completed,37,48.3,3095.65
+WO-0396,Procurement,Delivery Tracking,Medium,PROC-A,2026-05-14,2026-05-28,,In Progress,10,5.4,275.2
+WO-0397,Construction,Installation,Medium,CON-B,2026-04-12,2026-04-23,2026-04-24,Completed,49,68.5,4178.76
+WO-0398,Planning,Recovery Planning,High,PLAN-B,2026-01-24,2026-02-05,2026-02-03,Completed,14,16.6,964.84
+WO-0399,Engineering,Material Submittal,Low,ENG-B,2026-06-27,2026-07-12,2026-07-15,Completed,36,43.6,2483.61
+WO-0400,Construction,Punch List,Medium,CON-B,2026-01-12,2026-01-24,2026-01-28,Completed,21,21.0,1291.85
+WO-0401,Planning,Lookahead Review,High,PLAN-A,2026-02-03,2026-02-11,2026-02-10,Completed,19,21.9,1085.57
+WO-0402,Planning,Progress Verification,Medium,PLAN-B,2026-04-27,2026-05-11,2026-05-14,Completed,11,13.3,790.33
+WO-0403,Engineering,Drawing Revision,Low,ENG-C,2026-03-31,2026-04-11,2026-04-13,Completed,27,27.4,1561.7
+WO-0404,Engineering,Drawing Revision,Medium,ENG-B,2026-06-06,2026-06-20,2026-06-18,Completed,27,36.0,2381.23
+WO-0405,Procurement,Material Request,Medium,PROC-A,2026-02-01,2026-02-13,2026-02-28,Completed,9,10.8,479.03
+WO-0406,Construction,Installation,Medium,CON-C,2026-06-04,2026-06-17,2026-06-22,Completed,49,57.1,3359.28
+WO-0407,Construction,Work Front Preparation,High,CON-C,2026-03-01,2026-03-05,2026-03-14,Completed,50,65.9,4060.11
+WO-0408,Engineering,Material Submittal,Medium,ENG-B,2026-03-31,2026-04-07,2026-04-07,Completed,12,12.1,676.19
+WO-0409,Construction,Site Rectification,Medium,CON-C,2026-06-07,2026-06-16,,In Progress,53,32.0,1684.92
+WO-0410,Engineering,Drawing Revision,High,ENG-C,2026-03-27,2026-03-31,2026-04-11,Completed,28,32.5,1821.8
+WO-0411,Construction,Site Rectification,High,CON-B,2026-01-17,2026-01-21,,In Progress,50,17.1,1024.78
+WO-0412,Engineering,Design Review,High,ENG-B,2026-06-30,2026-07-04,2026-07-10,Completed,39,52.2,3128.23
+WO-0413,Construction,Punch List,Low,CON-A,2026-07-19,2026-08-04,2026-08-05,Completed,40,55.5,3006.21
+WO-0414,QA/QC,Quality Documentation,High,QA-C,2026-03-21,2026-03-26,2026-03-28,Completed,8,8.4,476.22
+WO-0415,Engineering,Technical Query,Critical,ENG-C,2026-06-02,2026-06-04,2026-06-08,Completed,27,22.0,1455.21
+WO-0416,Construction,Punch List,Medium,CON-A,2026-03-15,2026-03-30,2026-04-05,Completed,27,21.9,1317.26
+WO-0417,Construction,Punch List,Medium,CON-C,2026-03-23,2026-04-01,2026-04-11,Completed,14,14.0,890.19
+WO-0418,Construction,Installation,Low,CON-B,2026-06-22,2026-07-03,2026-07-10,Completed,35,41.5,2609.09
+WO-0419,Construction,Site Rectification,Medium,CON-A,2026-07-02,2026-07-16,,In Progress,54,31.7,1931.61
+WO-0420,Construction,Work Front Preparation,Medium,CON-A,2026-02-06,2026-02-18,2026-02-28,Completed,52,52.8,3336.1
+WO-0421,QA/QC,Quality Documentation,Low,QA-B,2026-01-29,2026-02-19,2026-02-18,Completed,15,13.0,729.99
+WO-0422,Procurement,Delivery Tracking,Medium,PROC-A,2026-07-22,2026-08-06,,On Hold,10,6.7,358.34
+WO-0423,QA/QC,Test Package,Medium,QA-C,2026-06-01,2026-06-14,2026-06-14,Completed,9,11.1,529.37
+WO-0424,Planning,Recovery Planning,Low,PLAN-B,2026-03-25,2026-04-07,,In Progress,6,4.7,266.57
+WO-0425,Procurement,Delivery Tracking,Medium,PROC-A,2026-01-24,2026-02-02,2026-02-02,Completed,17,20.0,905.32
+WO-0426,Construction,Site Rectification,Medium,CON-C,2026-03-19,2026-04-06,2026-04-12,Completed,49,70.6,4049.44
+WO-0427,Engineering,Technical Query,Low,ENG-C,2026-01-14,2026-01-24,2026-01-31,Completed,26,32.7,2000.51
+WO-0428,QA/QC,Quality Documentation,Medium,QA-B,2026-05-20,2026-06-06,2026-06-04,Completed,21,22.0,1262.27
+WO-0429,Procurement,Vendor Follow-up,Medium,PROC-A,2026-02-04,2026-02-12,2026-02-10,Completed,18,16.0,714.38
+WO-0430,Procurement,Purchase Review,High,PROC-B,2026-06-09,2026-06-21,2026-06-17,Completed,17,17.9,815.95
+WO-0431,QA/QC,Inspection,Medium,QA-C,2026-03-02,2026-03-15,2026-03-09,Completed,5,4.4,230.16
+WO-0432,Construction,Punch List,High,CON-C,2026-07-12,2026-07-24,2026-07-27,Completed,49,42.0,2445.6
+WO-0433,Procurement,Material Request,High,PROC-B,2026-06-06,2026-06-18,2026-07-01,Completed,19,19.3,905.69
+WO-0434,Planning,Lookahead Review,Medium,PLAN-A,2026-06-27,2026-07-15,2026-07-12,Completed,9,10.6,608.88
+WO-0435,QA/QC,Inspection,Medium,QA-A,2026-02-02,2026-02-13,2026-02-15,Completed,12,10.5,512.37
+WO-0436,Construction,Punch List,High,CON-B,2026-07-26,2026-08-02,2026-08-05,Completed,43,58.5,3309.62
+WO-0437,Engineering,Drawing Revision,Medium,ENG-A,2026-08-03,2026-08-16,,In Progress,18,14.8,895.5
+WO-0438,Construction,Installation,Low,CON-B,2026-04-13,2026-05-08,,In Progress,44,34.4,1966.9
+WO-0439,QA/QC,Quality Documentation,Low,QA-B,2026-04-08,2026-04-28,,In Progress,24,22.0,1183.25
+WO-0440,Construction,Site Rectification,Medium,CON-B,2026-07-25,2026-08-05,,In Progress,57,44.0,2729.39
+WO-0441,Construction,Punch List,Medium,CON-A,2026-06-22,2026-06-30,2026-07-02,Completed,16,20.3,1124.91
+WO-0442,Engineering,Design Review,Low,ENG-C,2026-06-18,2026-07-04,,Not Started,13,4.0,259.01
+WO-0443,Planning,Progress Verification,High,PLAN-A,2026-03-06,2026-03-11,2026-03-07,Completed,12,15.6,902.86
+WO-0444,Construction,Site Rectification,Medium,CON-A,2026-03-12,2026-03-25,,Not Started,26,11.0,636.04
+WO-0445,Construction,Punch List,High,CON-A,2026-06-15,2026-06-21,,In Progress,23,6.7,387.49
+WO-0446,QA/QC,Inspection,Low,QA-C,2026-07-06,2026-07-24,2026-07-27,Completed,24,25.3,1227.92
+WO-0447,QA/QC,Quality Documentation,Medium,QA-C,2026-07-01,2026-07-15,,In Progress,6,1.2,69.26
+WO-0448,Procurement,Purchase Review,Low,PROC-B,2026-03-27,2026-04-15,,In Progress,5,4.6,215.24
+WO-0449,Procurement,Delivery Tracking,High,PROC-A,2026-05-22,2026-05-29,2026-06-03,Completed,6,7.3,343.05
+WO-0450,Engineering,Material Submittal,High,ENG-A,2026-01-10,2026-01-17,2026-01-14,Completed,27,38.6,2162.52
+WO-0451,QA/QC,Test Package,High,QA-A,2026-04-14,2026-04-26,,In Progress,21,14.5,832.01
+WO-0452,Engineering,Drawing Revision,Medium,ENG-A,2026-05-01,2026-05-11,2026-05-14,Completed,11,15.3,1025.02
+WO-0453,Engineering,Drawing Revision,High,ENG-A,2026-07-29,2026-08-09,,In Progress,22,8.2,495.29
+WO-0454,Procurement,Purchase Review,Medium,PROC-A,2026-03-24,2026-03-31,2026-04-08,Completed,11,13.8,676.81
+WO-0455,QA/QC,Inspection,Low,QA-C,2026-06-06,2026-06-28,2026-07-03,Completed,4,3.7,176.93
+WO-0456,Construction,Site Rectification,Medium,CON-B,2026-06-27,2026-07-07,2026-07-01,Completed,38,45.5,2396.94
+WO-0457,Engineering,Material Submittal,High,ENG-A,2026-06-10,2026-06-20,2026-06-29,Completed,20,17.5,1103.06
+WO-0458,Engineering,Technical Query,High,ENG-C,2026-05-10,2026-05-17,2026-05-24,Completed,15,21.4,1332.6
+WO-0459,Engineering,Design Review,Low,ENG-B,2026-03-14,2026-03-30,2026-03-25,Completed,37,30.6,2016.52
+WO-0460,Planning,Progress Verification,Medium,PLAN-A,2026-05-05,2026-05-13,2026-05-06,Completed,14,19.4,1014.31
+WO-0461,Engineering,Drawing Revision,Low,ENG-C,2026-04-16,2026-05-02,2026-05-11,Completed,39,32.6,2012.89
+WO-0462,Engineering,Material Submittal,Medium,ENG-B,2026-02-04,2026-02-22,2026-02-25,Completed,25,31.2,1766.35
+WO-0463,Engineering,Material Submittal,Medium,ENG-A,2026-07-14,2026-07-24,2026-07-29,Completed,18,21.2,1342.8
+WO-0464,Engineering,Material Submittal,High,ENG-B,2026-02-25,2026-03-05,2026-03-08,Completed,23,21.7,1485.38
+WO-0465,Planning,Schedule Update,Medium,PLAN-A,2026-01-11,2026-01-29,2026-02-04,Completed,16,17.8,1052.98
+WO-0466,Procurement,Purchase Review,Medium,PROC-A,2026-05-23,2026-06-10,2026-06-16,Completed,12,9.7,487.57
+WO-0467,Engineering,Material Submittal,High,ENG-C,2026-05-30,2026-06-10,,In Progress,33,31.0,1994.84
+WO-0468,Construction,Installation,High,CON-A,2026-04-09,2026-04-13,2026-05-05,Completed,27,33.9,2034.53
+WO-0469,Construction,Punch List,High,CON-A,2026-06-08,2026-06-12,,In Progress,53,12.9,736.42
+WO-0470,Construction,Installation,Medium,CON-A,2026-06-15,2026-06-30,,In Progress,25,18.8,1158.25
+WO-0471,Procurement,Vendor Follow-up,High,PROC-A,2026-03-24,2026-04-05,2026-04-14,Completed,4,4.5,219.43
+WO-0472,Engineering,Technical Query,Medium,ENG-B,2026-07-24,2026-08-03,2026-08-07,Completed,19,18.8,1294.35
+WO-0473,Engineering,Technical Query,Low,ENG-A,2026-05-08,2026-05-22,2026-05-31,Completed,34,30.1,1821.92
+WO-0474,QA/QC,Inspection,Medium,QA-A,2026-01-06,2026-01-21,2026-01-21,Completed,24,29.3,1480.62
+WO-0475,Construction,Work Front Preparation,Medium,CON-C,2026-02-03,2026-02-12,2026-02-19,Completed,28,28.8,1670.91
+WO-0476,Engineering,Drawing Revision,High,ENG-B,2026-02-16,2026-02-22,2026-02-23,Completed,10,14.5,922.73
+WO-0477,QA/QC,Test Package,Medium,QA-C,2026-07-01,2026-07-18,2026-07-16,Completed,18,17.9,1026.2
+WO-0478,QA/QC,Quality Documentation,High,QA-B,2026-03-23,2026-04-04,2026-04-04,Completed,13,14.4,721.66
+WO-0479,Planning,Progress Verification,High,PLAN-B,2026-03-28,2026-04-08,2026-04-07,Completed,7,9.4,516.02
+WO-0480,Engineering,Design Review,High,ENG-A,2026-05-30,2026-06-06,2026-06-13,Completed,36,44.6,3071.24
+WO-0481,Planning,Recovery Planning,Medium,PLAN-B,2026-06-04,2026-06-21,2026-06-18,Completed,17,16.7,897.65
+WO-0482,Planning,Schedule Update,Medium,PLAN-B,2026-07-09,2026-07-23,,On Hold,17,9.4,560.33
+WO-0483,Construction,Punch List,Medium,CON-B,2026-05-15,2026-05-23,2026-05-31,Completed,50,69.7,4007.0
+WO-0484,Construction,Punch List,Medium,CON-B,2026-03-16,2026-03-23,2026-03-27,Completed,45,59.1,3201.17
+WO-0485,QA/QC,Quality Documentation,Low,QA-C,2026-03-15,2026-04-07,2026-04-05,Completed,4,3.5,174.9
+WO-0486,Planning,Schedule Update,Medium,PLAN-B,2026-05-29,2026-06-14,2026-06-24,Completed,19,19.8,1155.7
+WO-0487,Engineering,Technical Query,Medium,ENG-A,2026-02-07,2026-02-21,2026-02-22,Completed,25,25.9,1669.99
+WO-0488,Planning,Schedule Update,Medium,PLAN-A,2026-05-12,2026-05-29,2026-05-20,Completed,9,12.0,693.46
+WO-0489,QA/QC,Test Package,Low,QA-C,2026-04-01,2026-04-15,2026-04-13,Completed,19,20.3,1163.9
+WO-0490,Engineering,Drawing Revision,Medium,ENG-A,2026-08-01,2026-08-16,,In Progress,15,14.7,843.63
+WO-0491,Engineering,Design Review,Medium,ENG-B,2026-06-26,2026-07-05,2026-07-10,Completed,29,37.2,2135.94
+WO-0492,Engineering,Drawing Revision,High,ENG-B,2026-02-02,2026-02-07,2026-02-13,Completed,15,12.8,849.5
+WO-0493,Procurement,Material Request,Medium,PROC-A,2026-07-23,2026-08-06,2026-08-07,Completed,12,15.7,830.78
+WO-0494,Engineering,Drawing Revision,Medium,ENG-B,2026-01-08,2026-01-17,2026-01-12,Completed,18,24.4,1621.38
+WO-0495,Construction,Installation,Low,CON-C,2026-07-15,2026-07-25,2026-08-04,Completed,28,22.5,1382.75
+WO-0496,Planning,Recovery Planning,Medium,PLAN-A,2026-04-23,2026-05-02,2026-05-10,Completed,20,19.0,966.44
+WO-0497,Planning,Schedule Update,Medium,PLAN-A,2026-05-07,2026-05-25,2026-05-24,Completed,6,5.9,334.91
+WO-0498,QA/QC,Quality Documentation,Medium,QA-B,2026-03-16,2026-03-26,,In Progress,15,15.7,823.06
+WO-0499,Engineering,Material Submittal,Medium,ENG-C,2026-01-22,2026-01-31,2026-02-07,Completed,14,17.9,1216.71
+WO-0500,Engineering,Technical Query,Critical,ENG-B,2026-02-21,2026-02-26,2026-02-27,Completed,25,29.6,1957.03
