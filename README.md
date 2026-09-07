@@ -1,237 +1,78 @@
 # Operations Delay & Performance Analysis
 
-## Overview
+**Core analytics project · SQL + Power BI · Simulated data**
 
-This portfolio project analyzes 500 operational work orders using PostgreSQL and Power BI to identify backlog, overdue workload, aging risk, team performance, and operational bottlenecks.
+Analyzes operational backlog to distinguish workload volume, overdue rates, and aging risk, helping managers choose where to investigate and prioritize recovery work.
 
-The objective is to demonstrate how raw operational data can be transformed into management-ready insights using SQL analysis, reusable database logic, and interactive business intelligence reporting.
+**Demonstrated snapshot:** 500 work orders · 106 overdue open · 21.20% overdue rate · 70.89 average overdue days.
+
+[Read the detailed findings](insights/key-findings.md) · [Explore the SQL](sql) · [View source data](data/Portfolio_02_Work_Orders_500.csv)
+
+![Operations delay dashboard comparing department overdue rates, team aging and backlog risk](dashboard/operations-delay-dashboard.png)
 
 ## Business Problem
 
-Operations teams often track hundreds of work orders across multiple departments and teams.
+Managers need to identify bottlenecks across departments and teams. Raw overdue counts can obscure whether a team has a large workload, a high proportion of late work, or a small number of exceptionally old cases.
 
-Management needs to understand:
+## Solution
 
-- Which departments have the highest overdue workload?
-- Which teams have the highest operational risk?
-- Which categories contribute most to backlog?
-- How old are the overdue items?
-- Which areas should be prioritized for intervention?
+**Data → SQL Analysis → KPI Visibility → Insight → Management Decision**
 
-Raw counts alone can be misleading, so the analysis considers overdue rate, backlog volume, aging, and severity.
+PostgreSQL queries explore the data, compare overdue workload and team performance, and drill into category and priority patterns. A reusable analytical view prepares the fields shown in the Power BI dashboard.
 
-## Tools Used
+## Data
 
-- **PostgreSQL** — data storage and SQL analysis
-- **pgAdmin 4** — database management and query development
-- **Power BI** — dashboard development and visualization
-- **GitHub** — project documentation and portfolio presentation
+The repository contains **500 simulated work orders** across Engineering, QA/QC, Construction, Procurement, and Planning. Fields include dates, status, assigned team, priority, estimated/actual hours, and cost.
 
-## Dataset
+All overdue calculations use the fixed cutoff **16 August 2026**, matching the SQL and saved dashboard. The overdue rate uses all work orders as the denominator. Average overdue age uses overdue open work orders only.
 
-The project uses a simulated dataset of **500 operational work orders** across:
+## Analysis
 
-- Engineering
-- QA/QC
-- Construction
-- Procurement
-- Planning
+| Script | Analytical purpose |
+|---|---|
+| [01 — Data exploration](sql/01_data_exploration.sql) | Inspect row counts and workload by status and department. |
+| [02 — Overdue analysis](sql/02_overdue_analysis.sql) | Compare department overdue counts, rates, and aging. |
+| [03 — Team analysis](sql/03_team_analysis.sql) | Compare team backlog volume, overdue age, and combined risk. |
+| [04 — Category/priority investigation](sql/04_root_cause_analysis.sql) | Drill into QA-A's backlog and identify areas to investigate. |
+| [05 — Analytical view](sql/05_analysis_view.sql) | Create `vw_work_order_analysis` for Power BI. |
 
-Key fields include:
+**Backlog Risk Score = Overdue Items × Average Days Overdue.** This is a project-specific prioritization measure, not a standard industry KPI. Category and aging patterns identify investigation targets; they do not prove causal explanations.
 
-- Work Order ID
-- Department
-- Category
-- Priority
-- Assigned Team
-- Created Date
-- Due Date
-- Completed Date
-- Status
-- Estimated Hours
-- Actual Hours
-- Cost
+## Decision Support
 
-The dataset is available in:
+- Prioritize **CON-A** for backlog review: 13 overdue items with 90.54 average overdue days and a backlog risk score of 1,177.
+- Review **QA-B's** two overdue items despite the small volume: their average overdue age is 126.50 days.
+- Investigate **QA-A Quality Documentation**, with 4 of 9 work orders overdue (44.44%). Review aging in Inspection separately: 3 overdue items, 77 average overdue days, and a maximum of 117 days.
+- Compare department rates as well as volumes: Engineering has the highest overdue rate at 23.58%, while Construction has more overdue work orders.
 
-`data/Portfolio_02_Work_Orders_500.csv`
+## Automated Action
 
-## SQL Analysis
+The reusable SQL view calculates operational reporting fields for downstream analysis. This project supports management prioritization; it does not implement scheduled reporting, notifications, or work-order updates.
 
-The SQL workflow is organized into five scripts:
+## Measured / Demonstrated Outcome
 
-### 1. Data Exploration
+| Measure | Result at 16 August 2026 |
+|---|---:|
+| Total work orders | 500 |
+| Overdue open work orders | 106 |
+| Overdue rate, all work orders | 21.20% |
+| Average overdue age, overdue open only | 70.89 days |
 
-`sql/01_data_exploration.sql`
+The saved dashboard and [findings](insights/key-findings.md) show how different risk measures lead to different management priorities. These are simulated-data findings; backlog reduction after intervention has not been measured.
 
-Used to inspect the dataset, validate row counts, and summarize workload by status and department.
+## Tools and Outputs
 
-### 2. Overdue Analysis
+PostgreSQL, SQL, pgAdmin 4, Power BI, and DAX as documented in the original project. The repository includes source CSV, SQL scripts, findings, and a dashboard screenshot. **The editable Power BI `.pbix` file is not included.**
 
-`sql/02_overdue_analysis.sql`
+## How to Run
 
-Analyzes:
+1. Create a local PostgreSQL database and a `work_orders` table matching the CSV header, using lowercase unquoted column names. Use text for identifiers/categories/status, `DATE` for the three date columns, and numeric types for hours and cost.
+2. Import [Portfolio_02_Work_Orders_500.csv](data/Portfolio_02_Work_Orders_500.csv) using pgAdmin's import tool, with its header enabled and blank completion dates treated as null.
+3. Run scripts 01–04, then script 05 to create `vw_work_order_analysis`. Keep the supplied cutoff to reproduce the reported snapshot.
+4. To rebuild the visual report, connect Power BI Desktop to that view and use the saved screenshot as a layout reference. To review the existing analysis, no Power BI installation is required.
 
-- Overdue open work orders
-- Overdue rate by department
-- Aging of overdue items
-- Maximum and average days overdue
+Database creation and table DDL are not supplied as scripts. The instructions above describe the required setup rather than a one-command installation.
 
-### 3. Team Performance Analysis
+---
 
-`sql/03_team_analysis.sql`
-
-Compares:
-
-- Team overdue rates
-- Average overdue age
-- Overdue backlog volume
-- Custom Backlog Risk Score
-
-The custom prioritization metric is:
-
-**Backlog Risk Score = Overdue Items × Average Days Overdue**
-
-This score is used as a project-specific decision-support metric rather than a standard industry KPI.
-
-### 4. Root-Cause Analysis
-
-`sql/04_root_cause_analysis.sql`
-
-Performs drill-down analysis by:
-
-- Category
-- Priority
-- Category + priority combination
-- Work-order aging
-
-This analysis was used to investigate the QA-A backlog in more detail.
-
-### 5. Power BI Analytical View
-
-`sql/05_analysis_view.sql`
-
-Creates a reusable PostgreSQL view containing calculated fields such as:
-
-- Work Order State
-- Overdue Status
-- Days Overdue
-- Completion Performance
-- Completion Delay Days
-- Hours Variance
-
-The SQL view is used as the analytical source for Power BI.
-
-## Power BI Dashboard
-
-![Operations Delay & Performance Dashboard](dashboard/operations-delay-dashboard.png)
-
-The dashboard includes:
-
-- Total Work Orders
-- Overdue Open Work Orders
-- Overall Overdue Rate
-- Average Days Overdue
-- Overdue Rate by Department
-- Average Days Overdue by Team
-- Team Backlog Risk Ranking
-- Overdue Work Orders by Category
-- Department and Priority slicers
-
-## Key Results
-
-### Core KPIs
-
-- **500** total work orders
-- **106** overdue open work orders
-- **21.20%** overall overdue rate
-- **70.89 days** average overdue age
-
-### Department Performance
-
-Engineering had the highest department overdue rate at **23.58%**.
-
-Construction had more overdue work orders in absolute terms, demonstrating why normalized performance measures are necessary when comparing departments of different sizes.
-
-### Team Risk
-
-CON-A had the highest combined backlog risk:
-
-- 13 overdue items
-- 90.54 average days overdue
-- Backlog Risk Score: **1,177**
-
-QA-B had the highest average overdue age at **126.50 days**, but only two overdue items.
-
-This demonstrates the difference between backlog-volume risk and aging risk.
-
-### Root-Cause Findings
-
-Within QA-A:
-
-**Quality Documentation**
-- 9 total work orders
-- 4 overdue
-- 44.44% overdue rate
-
-Quality Documentation represented the largest backlog-volume issue.
-
-**Inspection**
-- 3 overdue items
-- 77 average days overdue
-- Maximum age of 117 days
-
-Inspection represented a stronger aging-severity issue.
-
-## Management Recommendations
-
-1. Prioritize CON-A for immediate backlog reduction because it combines high overdue volume with long aging.
-2. Review QA-B's old unresolved items despite its small backlog volume.
-3. Investigate the QA-A Quality Documentation workflow for bottlenecks.
-4. Escalate long-aging Inspection work orders.
-5. Evaluate operations using multiple KPIs instead of overdue counts alone.
-
-## Project Structure
-
-```text
-operations-delay-performance-analysis/
-├── README.md
-├── data/
-│   └── Portfolio_02_Work_Orders_500.csv
-├── sql/
-│   ├── 01_data_exploration.sql
-│   ├── 02_overdue_analysis.sql
-│   ├── 03_team_analysis.sql
-│   ├── 04_root_cause_analysis.sql
-│   └── 05_analysis_view.sql
-├── dashboard/
-│   └── operations-delay-dashboard.png
-└── insights/
-    └── key-findings.md
-```
-
-## Skills Demonstrated
-
-- PostgreSQL
-- SQL querying
-- Data exploration
-- Aggregation and filtering
-- CASE expressions
-- PostgreSQL FILTER
-- KPI development
-- Backlog analysis
-- Aging analysis
-- Root-cause investigation
-- Power BI
-- DAX measures
-- Dashboard design
-- Operational analytics
-- Business recommendations
-
-## Business Value
-
-This project demonstrates an end-to-end analytics workflow:
-
-**Raw Data → PostgreSQL → SQL Analysis → Analytical View → Power BI → Management Insights**
-
-The focus is not only on producing charts, but on identifying operational risk, explaining why it matters, and recommending where management attention should be directed.
+[Portfolio overview](https://github.com/23-06109#selected-projects) · [LinkedIn](https://www.linkedin.com/in/jimmyjrmanalon)
