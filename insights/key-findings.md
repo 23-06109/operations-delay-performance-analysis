@@ -21,11 +21,11 @@ Engineering recorded an overdue rate of **23.58%**, the highest among all depart
 
 Department overdue rates:
 
-- Engineering — 23.58%
-- Procurement — 23.29%
-- Construction — 21.62%
-- Planning — 20.75%
-- QA/QC — 16.50%
+- Engineering: 23.58%
+- Procurement: 23.29%
+- Construction: 21.62%
+- Planning: 20.75%
+- QA/QC: 16.50%
 
 Construction had the highest number of overdue work orders, but Engineering had the highest overdue rate relative to its total workload.
 
