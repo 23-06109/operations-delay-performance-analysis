@@ -36,6 +36,7 @@ All overdue calculations use the fixed cutoff **16 August 2026**, matching the S
 
 | Script | Analytical purpose |
 |---|---|
+| [00. Table schema](sql/00_schema.sql) | Create the `work_orders` table matching the CSV columns. |
 | [01. Data exploration](sql/01_data_exploration.sql) | Inspect row counts and workload by status and department. |
 | [02. Overdue analysis](sql/02_overdue_analysis.sql) | Compare department overdue counts, rates, and aging. |
 | [03. Team analysis](sql/03_team_analysis.sql) | Compare team backlog volume, overdue age, and combined risk. |
@@ -72,14 +73,14 @@ PostgreSQL, SQL, and a Power BI dashboard screenshot. The repository includes th
 
 ## How to Run
 
-1. Create a local PostgreSQL database and a `work_orders` table matching the CSV header, using lowercase unquoted column names. Use text for identifiers, categories, and status, `DATE` for the three date columns, and numeric types for hours and cost. No database creation script or table DDL file is included.
+1. Create a local PostgreSQL database and run [sql/00_schema.sql](sql/00_schema.sql) to create the `work_orders` table.
 2. Import [Portfolio_02_Work_Orders_500.csv](data/Portfolio_02_Work_Orders_500.csv) with the header row enabled and blank completion dates treated as null. pgAdmin can do that import.
 3. Run scripts 01 to 04, then script 05 to create `vw_work_order_analysis`. Keep the supplied cutoff to reproduce the reported snapshot.
 4. To rebuild the visual report, connect Power BI Desktop to that view and use the saved screenshot as a layout reference. To review the existing analysis, Power BI is not required.
 
 The steps above describe the setup. They are not a one-command installation.
 
-[Portfolio overview](https://github.com/23-06109#selected-projects)
+[Portfolio overview](https://github.com/23-06109#portfolio)
 
 ## Work with me
 
