@@ -84,4 +84,7 @@ The steps above describe the setup. They are not a one-command installation.
 
 ## Work with me
 
-I offer a fixed-price, async Operations Reporting Automation Sprint: you send a messy Excel/CSV tracker, I send back a clean report that rebuilds on refresh, an overdue action list and a short how-to video. No meetings. Message me on LinkedIn: https://www.linkedin.com/in/jimmyjrmanalon/
+I offer a fixed-price, 100% async **Operations Reporting Automation Sprint** (starting at $249 USD / ~$380–$400 AUD, 7-day turnaround, zero sales calls): you send up to 5 messy recurring Excel or CSV files, and I return a clean one-click refreshable workbook, an exceptions/overdue action list, and a short Loom walkthrough.
+
+- Scope & pricing: [How I Fix Messy Weekly Excel Reports](https://docs.google.com/document/d/1p7H7GMjp0eq7UDmgzQamdKqB7XUT_p2Ow4DqHsiDSvw/view)
+- Message me on LinkedIn: https://www.linkedin.com/in/jimmyjrmanalon/
